@@ -255,7 +255,9 @@ section#about {
   display: block;
 }
 section#service {
-  background: rgb(255, 255, 255);
+  background-image: url("../img/service/exp-bg.png");
+  background-position: left;
+  background-repeat: no-repeat;
 }
 .serviceWrapper {
   display: flex;
@@ -266,7 +268,7 @@ section#service {
 }
 .singleService {
   width: 23%;
-  background: rgb(219, 219, 219);
+  background: rgb(255 255 255);
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 25px;
@@ -300,7 +302,7 @@ section#service {
 .singleService i {
   width: 24%;
   height: 26%;
-  background: rgb(151, 151, 151);
+  background: rgb(223 223 223);
   margin: 10px auto auto;
   display: grid;
   place-items: center;
@@ -435,4 +437,78 @@ section#pricing {
 }
 .singlePrice:first-child button {
   margin-top: 90px;
+}
+
+/* styling recent work */
+section#recentProject {
+  background: var(--pure);
+}
+
+.projectWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.singleProject {
+  width: 31%;
+  margin-bottom: 40px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.singleProject:hover {
+  cursor: pointer;
+}
+
+.projectImg {
+  background: var(--dark);
+  border-radius: 10px;
+  padding: 6px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.projectImg:hover {
+  margin-top: -10px;
+}
+
+.projectContent h2 {
+  color: var(--dark);
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.projectContent a {
+  background: #ededed;
+  width: 130px;
+  color: var(--primary);
+  padding: 6px 14px;
+  display: block;
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 50px;
+  font-family: "Poppins";
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+
+.projectContent a:hover {
+  background: var(--primary);
+  color: var(--pure);
+  cursor: pointer;
+}
+
+.projectImg img {
+  border-radius: 10px;
 }
